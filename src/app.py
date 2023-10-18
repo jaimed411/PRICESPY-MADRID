@@ -4,9 +4,9 @@ from sklearn.ensemble import RandomForestRegressor
 import joblib
 
 # Cargar el modelo entrenado
-model = joblib.load(r'/workspaces/probando/data/MODEL3.sav')
+model = joblib.load("./data/MODEL3.sav")
 
-# Función para hacer una predicción con el modelo
+# Función para hacer una predicción con el modelogit 
 def predict_price(features):
     return model.predict([features])[0]
 
